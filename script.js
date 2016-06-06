@@ -2,7 +2,8 @@ $('.btn').on('click', function(event){
 	var entities = $(this).attr('name');
 	$.ajax({
 	    method: 'GET',
-	    url: 'ramonelias.github.io/'+ entities + '.json?callback=?',
+	    url: 'https://raw.githubusercontent.com/RamonElias/repotest/gh-pages/'+ entities + '.json?callback=?',
+	    //https://raw.githubusercontent.com/RamonElias/repotest/gh-pages/ciudades.json
 	    datatype: 'jsonp',
 	    success: function(response){
 			$('.places').empty();
