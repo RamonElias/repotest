@@ -136,7 +136,9 @@ function myjsondatabasefunc(id, slug, ent, ents) {
 	var places = [];
     $.ajax({
 	    method: 'GET', // Type of response and matches what we said in the route
-	    url: ents + '.json', // This is the url we gave in the route
+	    //url: 'https://raw.githubusercontent.com/RamonElias/repotest/gh-pages/'+ entities + '.json?callback=?',
+	    url: 'https://raw.githubusercontent.com/RamonElias/repotest/gh-pages/'+ ents + '.json?callback=?',
+	    //url: ents + '.json', // This is the url we gave in the route
 		datatype: 'json',
 		async: false,
 	    success: function(response){ // What to do if we succeed
