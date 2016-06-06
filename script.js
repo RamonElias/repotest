@@ -2,8 +2,8 @@ $('.btn').on('click', function(event){
 	var entities = $(this).attr('name');
 	$.ajax({
 	    method: 'GET',
-	    url: entities + '.json',
-		datatype: 'json',
+	    url: 'ramonelias.github.io/'+ entities + '.json',
+	    datatype: 'json',
 	    success: function(response){
 			$('.places').empty();
 			var entitie = entities;
