@@ -3,7 +3,7 @@ $('.btn').on('click', function(event){
 	$.ajax({
 	    method: 'GET',
 	    url: 'ramonelias.github.io/'+ entities + '.json',
-	    datatype: 'json',
+	    datatype: 'jsonp',
 	    success: function(response){
 			$('.places').empty();
 			var entitie = entities;
